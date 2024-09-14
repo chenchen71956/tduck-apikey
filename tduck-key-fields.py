@@ -26,7 +26,7 @@ def login_to_backend(driver):
     :return: API Key
     """
     try:
-        driver.get('http://bot.cynasck.asia:8999/project/form/setting?key=hlYd7ZZQ')  # 替换为实际的后台登录URL
+        driver.get('http://ip/project/form/setting?key=？')  # 替换为实际的后台登录URL
         driver.maximize_window()
         WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.TAG_NAME, 'body')))
         username_input = WebDriverWait(driver, 10).until(
